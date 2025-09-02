@@ -7,7 +7,6 @@
     <title>Faisal Abdul Salam - Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -207,10 +206,13 @@
     <div class="resume-container">
         <div class="header">
             <img src="./assets/profile.png" alt="Faisal Abdul Salam Profile" class="profile-img">
+            <!-- To use a local image, replace the above line with: -->
+            <!-- <img src="assets/profile.jpg" alt="Faisal Abdul Salam Profile" class="profile-img"> -->
+
             <h1>Faisal Abdul Salam</h1>
             <p class="lead">Project Manager & Full Stack Developer</p>
-            <a href="mailto:faisaltez@gmail.com" class="btn btn-custom mt-3 mb-3">Contact Me</a>
-            <a href="./resume.pdf" class="btn btn-custom mt-3 mb-3" download>Download PDF Resume</a>
+            <a href="mailto:faisaltez@gmail.com" class="btn btn-custom mt-3">Contact Me</a>
+            <a href="./resume.pdf" class="btn btn-custom mt-3" download>Download PDF Resume</a>
         </div>
 
         <div class="row">
@@ -398,83 +400,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // GSAP Animations
-        document.addEventListener('DOMContentLoaded', () => {
-            // Animate header elements
-            gsap.from('.header .profile-img', {
-                opacity: 0,
-                y: -50,
-                duration: 1,
-                ease: 'power2.out'
-            });
-
-            gsap.from('.header h1, .header p, .header .btn-custom', {
-                opacity: 0,
-                y: 20,
-                duration: 1,
-                stagger: 0.2,
-                delay: 0.5,
-                ease: 'power2.out'
-            });
-
-            // Animate section titles
-            gsap.from('.section-title', {
-                opacity: 0,
-                x: -50,
-                duration: 1,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: '.resume-container',
-                    start: 'top 80%',
-                    toggleActions: 'play none none none'
-                },
-                ease: 'power2.out'
-            });
-
-            // Animate personal info items
-            gsap.from('.col-md-4 p, .skill-list li, .project-list li', {
-                opacity: 0,
-                y: 20,
-                duration: 0.8,
-                stagger: 0.1,
-                scrollTrigger: {
-                    trigger: '.col-md-4',
-                    start: 'top 80%',
-                    toggleActions: 'play none none none'
-                },
-                ease: 'power2.out'
-            });
-
-            // Animate work history and education items
-            gsap.from('.work-item, .education-item', {
-                opacity: 0,
-                y: 30,
-                duration: 1,
-                stagger: 0.2,
-                scrollTrigger: {
-                    trigger: '.col-md-8',
-                    start: 'top 80%',
-                    toggleActions: 'play none none none'
-                },
-                ease: 'power2.out'
-            });
-
-            // Animate project links
-            gsap.from('.project-list-two-col li', {
-                opacity: 0,
-                y: 20,
-                duration: 0.8,
-                stagger: 0.1,
-                scrollTrigger: {
-                    trigger: '.project-list-two-col',
-                    start: 'top 80%',
-                    toggleActions: 'play none none none'
-                },
-                ease: 'power2.out'
-            });
-        });
-    </script>
 </body>
 
 </html>
