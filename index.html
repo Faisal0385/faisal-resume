@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             color: #333;
             line-height: 1.6;
         }
+
         .resume-container {
             max-width: 1000px;
             margin: 40px auto;
@@ -23,6 +25,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .resume-container::before {
             content: '';
             position: absolute;
@@ -32,6 +35,7 @@
             height: 5px;
             background: linear-gradient(to right, #082447, #00d4ff);
         }
+
         .profile-img {
             display: block;
             margin: 20px auto;
@@ -42,6 +46,7 @@
             border: 3px solid #082447;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
         .header {
             text-align: center;
             padding: 20px;
@@ -50,17 +55,20 @@
             margin-bottom: 30px;
             position: relative;
         }
+
         .header h1 {
             font-size: 2.5rem;
             font-weight: 700;
             color: #082447;
             margin-bottom: 10px;
         }
+
         .header p.lead {
             font-size: 1.2rem;
             color: #555;
             font-weight: 400;
         }
+
         .section-title {
             font-size: 1.8rem;
             font-weight: 600;
@@ -70,6 +78,7 @@
             margin-bottom: 25px;
             position: relative;
         }
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -79,51 +88,66 @@
             height: 3px;
             background: #082447;
         }
+
         .contact-info a {
             text-decoration: none;
             color: #082447;
             transition: color 0.3s ease;
         }
+
         .contact-info a:hover {
             color: #00d4ff;
             text-decoration: underline;
         }
+
         .job-title {
             font-weight: 600;
             font-size: 1.2rem;
             color: #333;
         }
+
         .date {
             font-style: italic;
             color: #6c757d;
             font-size: 0.95rem;
         }
-        .skill-list, .project-list {
+
+        .skill-list,
+        .project-list {
             list-style: none;
             padding-left: 0;
         }
-        .skill-list li, .project-list li {
+
+        .skill-list li,
+        .project-list li {
             margin-bottom: 10px;
             padding: 10px;
             background: #f1f3f5;
             border-radius: 5px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .skill-list li:hover, .project-list li:hover {
+
+        .skill-list li:hover,
+        .project-list li:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        .work-item, .education-item {
+
+        .work-item,
+        .education-item {
             background: #f8f9fa;
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
             transition: transform 0.3s ease;
         }
-        .work-item:hover, .education-item:hover {
+
+        .work-item:hover,
+        .education-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
+
         .btn-custom {
             background: #082447;
             color: #fff;
@@ -132,26 +156,61 @@
             border-radius: 25px;
             transition: background 0.3s ease, transform 0.3s ease;
         }
+
         .btn-custom:hover {
             background: #00d4ff;
             transform: scale(1.05);
         }
+
+        .project-list-two-col {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .project-list-two-col li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f1f3f5;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-list-two-col li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
         @media (max-width: 768px) {
-            .header h1 { font-size: 2rem; }
-            .section-title { font-size: 1.5rem; }
-            .resume-container { margin: 20px; padding: 20px; }
-            .profile-img { width: 120px; height: 120px; }
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .resume-container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="resume-container">
-        <img src="./image.png" alt="Faisal Abdul Salam Profile" class="profile-img">
-        <!-- To use a local image, replace the above line with: -->
-        <!-- <img src="assets/profile.jpg" alt="Faisal Abdul Salam Profile" class="profile-img"> -->
         <div class="header">
+            <img src="./assets/profile.png" alt="Faisal Abdul Salam Profile" class="profile-img">
+            <!-- To use a local image, replace the above line with: -->
+            <!-- <img src="assets/profile.jpg" alt="Faisal Abdul Salam Profile" class="profile-img"> -->
+
             <h1>Faisal Abdul Salam</h1>
-            <p class="lead">Detail-Oriented Project Manager & Full Stack Developer</p>
+            <p class="lead">Project Manager & Full Stack Developer</p>
             <a href="mailto:faisaltez@gmail.com" class="btn btn-custom mt-3">Contact Me</a>
             <a href="resume.pdf" class="btn btn-custom mt-3" download>Download PDF Resume</a>
         </div>
@@ -162,11 +221,16 @@
                 <h3 class="section-title">Personal Info</h3>
                 <p><strong>Current Job Post:</strong> Project Manager</p>
                 <p><strong>Company:</strong> Global Mission IT</p>
-                <p><strong>Website:</strong> <a href="https://gmit.academy" target="_blank" class="contact-info">gmit.academy</a></p>
-                <p><strong>Email:</strong> <a href="mailto:faisaltez@gmail.com" class="contact-info">faisaltez@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="https://gmit.academy" target="_blank"
+                        class="contact-info">gmit.academy</a></p>
+                <p><strong>Email:</strong> <a href="mailto:faisaltez@gmail.com"
+                        class="contact-info">faisaltez@gmail.com</a>
+                </p>
                 <p><strong>Phone:</strong> 013-12361494</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisalabdul-salam-7267206a" target="_blank" class="contact-info">LinkedIn Profile</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Faisal0385" target="_blank" class="contact-info">GitHub Profile</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faisalabdul-salam-7267206a"
+                        target="_blank" class="contact-info">LinkedIn Profile</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Faisal0385" target="_blank"
+                        class="contact-info">GitHub Profile</a></p>
 
                 <h3 class="section-title mt-4">Technical Skills</h3>
                 <ul class="skill-list">
@@ -175,45 +239,81 @@
                     <li><strong>Mobile:</strong> Flutter, React Native</li>
                     <li><strong>Other:</strong> WordPress Theme Development</li>
                 </ul>
+
+                <h3 class="section-title mt-4">Best Work</h3>
+                <ul class="skill-list">
+                    <li><strong>Odakter:</strong> Doctor Management</li>
+                    <li><strong>Zyona:</strong> Prescription Management</li>
+                </ul>
             </div>
 
             <!-- Work History and Education -->
             <div class="col-md-8">
                 <h3 class="section-title">Work History</h3>
                 <div class="work-item">
+                    <p class="job-title">Project Manager </p>
+                    <p><strong>Global Mission IT </strong>, Chittagong, Bangladesh <span class="date">December 2024 –
+                            Present</span></p>
+                    <ul>
+                        <li>Directed end-to-end course development in programming, app development, cybersecurity,
+                            digital marketing, and design, ensuring content aligned with global industry demand.</li>
+                        <li>Maintained the official GM IT website, implementing updates and adding new features to
+                            enhance performance and functionality.</li>
+                        <li>Supervised software product development including inventory, accounting, and e-commerce
+                            systems, ensuring timely delivery and functional quality.</li>
+                        <li>Collaborated with influencers and YouTubers to strengthen course credibility and expand
+                            audience reach.</li>
+                        <li>Researched and evaluated emerging technologies to guide course roadmap and company tech
+                            adoption strategy.</li>
+                        <li>Reviewed course materials, coding projects, and UI/UX deliverables for quality assurance and
+                            student usability.</li>
+                        <li>Coordinated with instructors, developers, and designers to maintain on-time delivery of
+                            projects and learning modules.</li>
+                    </ul>
+                </div>
+                <div class="work-item">
                     <p class="job-title">Mobile App Developer (Project Based)</p>
-                    <p>Khelboo, Chittagong, Bangladesh <span class="date">June 2022 – February 2025</span></p>
+                    <p><strong>Khelboo</strong>, Chittagong, Bangladesh <span class="date">June 2022 – February
+                            2025</span>
+                    </p>
                     <ul>
                         <li>Developed the mobile app for Khelboo using React Native.</li>
                     </ul>
                 </div>
                 <div class="work-item">
                     <p class="job-title">Full Stack Developer</p>
-                    <p>Kaf Tech BD, Chittagong, Bangladesh <span class="date">January 2022 – December 2024</span></p>
+                    <p><strong>Kaf Tech BD</strong>, Chittagong, Bangladesh <span class="date">January 2022 – December
+                            2024</span></p>
                     <ul>
                         <li>Worked with developers, quality assurance, and customers to resolve technical issues.</li>
                         <li>Analyzed proposed technical solutions based on customer requirements.</li>
-                        <li>Trained and mentored junior developers and marketing team to improve overall team performance.</li>
-                        <li>Developed and maintained in-house projects like E-commerce and Customer Tracking Solution.</li>
+                        <li>Trained and mentored junior developers and marketing team to improve overall team
+                            performance.</li>
+                        <li>Developed and maintained in-house projects like E-commerce and Customer Tracking Solution.
+                        </li>
                     </ul>
                 </div>
                 <div class="work-item">
                     <p class="job-title">Project Manager E-commerce (Project Based)</p>
-                    <p>SIMCO MART, Chittagong, Bangladesh <span class="date">December 2021 – May 2022</span></p>
+                    <p><strong>SIMCO MART</strong>, Chittagong, Bangladesh <span class="date">December 2021 – May
+                            2022</span></p>
                     <ul>
                         <li>Designed and developed the E-commerce website and executed & implemented the project.</li>
                     </ul>
                 </div>
                 <div class="work-item">
                     <p class="job-title">Web Design & Development Trainer</p>
-                    <p>Beacon IT, Chittagong, Bangladesh <span class="date">March 2021 – January 2022</span></p>
+                    <p><strong>Beacon IT</strong>, Chittagong, Bangladesh <span class="date">March 2021 – January
+                            2022</span></p>
                     <ul>
                         <li>Trained and instructed students in learning web design & development.</li>
                     </ul>
                 </div>
                 <div class="work-item">
                     <p class="job-title">Marketing Lead / Web Application Developer</p>
-                    <p>Ebonyhaus Sdn Bhd, Petaling Jaya, Malaysia <span class="date">March 2016 – August 2020</span></p>
+                    <p><strong>Ebonyhaus Sdn Bhd</strong>, Petaling Jaya, Malaysia <span class="date">March 2016 –
+                            August
+                            2020</span></p>
                     <ul>
                         <li>Developed an in-house CRM & event management system for EbonyHaus Sdn Bhd.</li>
                         <li>Managed the database of EbonyHaus Sdn Bhd.</li>
@@ -223,7 +323,8 @@
                 </div>
                 <div class="work-item">
                     <p class="job-title">Software QC/Associate Implementer</p>
-                    <p>Logic Software Ltd, Dhaka, Bangladesh <span class="date">June 2012 – July 2013</span></p>
+                    <p><strong>Logic Software Ltd</strong>, Dhaka, Bangladesh <span class="date">June 2012 – July
+                            2013</span></p>
                     <ul>
                         <li>Performed QC, process checks, and bug identification, working closely with developers.</li>
                         <li>Implemented software in the garments industry.</li>
@@ -232,7 +333,9 @@
                 </div>
                 <div class="work-item">
                     <p class="job-title">Shift Engineer (Weaving Department)</p>
-                    <p>Partex Denim Limited <span class="date">May 2011 – May 2012</span></p>
+                    <p><strong>Partex Denim Limited</strong>, Gazipur, Dhaka, Bangladesh <span class="date">May 2011 –
+                            May
+                            2012</span></p>
                     <ul>
                         <li>Managed the shift of the weaving department.</li>
                         <li>Handled machine and fabric errors and set machine programs.</li>
@@ -242,30 +345,61 @@
                 <h3 class="section-title">Education</h3>
                 <div class="education-item">
                     <p><strong>MBA, Global Business</strong><br>Lincoln University College, Petaling Jaya, Malaysia</p>
-                    <p><strong>Bachelor of Science, Textile Engineering</strong><br>Primeasia University, Dhaka, Bangladesh</p>
-                    <p><strong>Web Development with PHP and Laravel Framework</strong><br>Beacon IT, Chittagong, Bangladesh</p>
+                    <p><strong>Bachelor of Science, Textile Engineering</strong><br>Primeasia University, Dhaka,
+                        Bangladesh</p>
+                    <p><strong>Web Development with PHP and Laravel Framework</strong><br>Beacon IT, Chittagong,
+                        Bangladesh</p>
                     <p><strong>Machine Learning & Data Science with Python</strong><br>HR Venture, Dhaka, Bangladesh</p>
-                    <p><strong>Certified Supply Chain Specialist (CSCA)</strong><br>International Institute for Procurement and Market Research (IIPMR)<br>2016 – 2017</p>
+                    <p><strong>Certified Supply Chain Specialist (CSCA)</strong><br>International Institute for
+                        Procurement and Market Research (IIPMR)<br>2016 – 2017</p>
                 </div>
 
                 <h3 class="section-title">Client Project Links</h3>
-                <ul class="project-list">
-                    <li><a href="https://ebonyhaus.com" target="_blank" class="contact-info">ebonyhaus.com</a></li>
-                    <li><a href="https://www.simcomart.com" target="_blank" class="contact-info">simcomart.com</a></li>
-                    <li><a href="https://www.taabir.shop" target="_blank" class="contact-info">taabir.shop</a></li>
-                    <li><a href="https://redex.com.bd" target="_blank" class="contact-info">redex.com.bd</a></li>
-                    <li><a href="https://mdl.com.bd" target="_blank" class="contact-info">mdl.com.bd</a></li>
-                    <li><a href="https://aketbd.com" target="_blank" class="contact-info">aketbd.com</a></li>
-                    <li><a href="https://e-shoppersbd.com" target="_blank" class="contact-info">e-shoppersbd.com</a></li>
-                    <li><a href="https://accurabd.com" target="_blank" class="contact-info">accurabd.com</a></li>
-                    <li><a href="https://kaftechbd.com" target="_blank" class="contact-info">kaftechbd.com</a></li>
-                    <li><a href="https://zakrealty.co/" target="_blank" class="contact-info">zakrealty.co</a></li>
-                    <li><a href="https://royalmartpaikary.com/" target="_blank" class="contact-info">royalmartpaikary.com</a></li>
-                    <li><a href="https://gmit.academy/" target="_blank" class="contact-info">gmit.academy</a></li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="project-list-two-col">
+                            <li><a href="https://ebonyhaus.com" target="_blank"
+                                    class="contact-info text-decoration-none">ebonyhaus.com</a>
+                            </li>
+                            <li><a href="https://www.simcomart.com" target="_blank"
+                                    class="contact-info text-decoration-none">simcomart.com</a></li>
+                            <li><a href="https://www.taabir.shop" target="_blank"
+                                    class="contact-info text-decoration-none">taabir.shop</a>
+                            </li>
+                            <li><a href="https://redex.com.bd" target="_blank"
+                                    class="contact-info text-decoration-none">redex.com.bd</a>
+                            </li>
+                            <li><a href="https://mdl.com.bd" target="_blank"
+                                    class="contact-info text-decoration-none">mdl.com.bd</a></li>
+                            <li><a href="https://aketbd.com" target="_blank"
+                                    class="contact-info text-decoration-none">aketbd.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="project-list-two-col">
+                            <li><a href="https://e-shoppersbd.com" target="_blank"
+                                    class="contact-info text-decoration-none">e-shoppersbd.com</a></li>
+                            <li><a href="https://accurabd.com" target="_blank"
+                                    class="contact-info text-decoration-none">accurabd.com</a>
+                            </li>
+                            <li><a href="https://kaftechbd.com" target="_blank"
+                                    class="contact-info text-decoration-none">kaftechbd.com</a>
+                            </li>
+                            <li><a href="https://zakrealty.co/" target="_blank"
+                                    class="contact-info text-decoration-none">zakrealty.co</a>
+                            </li>
+                            <li><a href="https://royalmartpaikary.com/" target="_blank"
+                                    class="contact-info text-decoration-none">royalmartpaikary.com</a></li>
+                            <li><a href="https://gmit.academy/" target="_blank"
+                                    class="contact-info text-decoration-none">gmit.academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
